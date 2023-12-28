@@ -1,0 +1,31 @@
+{
+  "name": "@samhwang/bg3-ui-workspace",
+  "version": "0.0.0",
+  "description": "BG3 UI",
+  "engines": {
+    "node": "^20.0.0",
+    "pnpm": "^8.0.0"
+  },
+  "packageManager": "pnpm@8.12.1",
+  "author": "Sam Huynh",
+  "scripts": {
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "format": "turbo run format",
+    "typecheck": "turbo run typecheck",
+    "ci": "turbo run ci",
+    "build": "turbo run build"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.4.1",
+    "@types/node": "^20.10.5",
+    "@vitest/coverage-v8": "^1.1.0",
+    "esbuild": "^0.19.10",
+    "rimraf": "^5.0.5",
+    "tsup": "^8.0.1",
+    "tsx": "^4.7.0",
+    "turbo": "^1.11.2",
+    "typescript": "^5.3.3",
+    "vitest": "^1.1.0"
+  }
+}
