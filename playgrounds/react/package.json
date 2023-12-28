@@ -1,0 +1,27 @@
+{
+  "name": "@samhwang/bg3-ui-playground-react",
+  "version": "1.0.0",
+  "description": "BG3 UI Playground React",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "biome check ./src/**.ts",
+    "lint:fix": "biome check --apply ./src/**.ts",
+    "lint:fix:unsafe": "biome check --apply-unsafe ./src/**.ts",
+    "format": "biome format --write ./src/**.ts"
+  },
+  "dependencies": {
+    "@samhwang/bg3-ui-react": "*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.0.10"
+  }
+}
