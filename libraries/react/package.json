@@ -32,5 +32,8 @@
     "@vitejs/plugin-react": "^4.2.1",
     "vite": "^5.0.10",
     "vite-plugin-dts": "^3.7.0"
+  },
+  "dependencies": {
+    "@fontsource/ibm-plex-mono": "^5.0.8"
   }
 }

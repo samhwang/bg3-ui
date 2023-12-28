@@ -1,3 +1,5 @@
+import { Button } from '@samhwang/bg3-ui-react';
+
 export default function App() {
-  return <h1>React Playground</h1>;
+  return <Button>New Game</Button>;
 }
