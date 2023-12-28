@@ -23,11 +23,11 @@
     "typecheck": "tsc",
     "release": "pnpm run build && changeset publish"
   },
-  "dependencies": {},
   "peerDependencies": {
     "react": "^18.2.0"
   },
   "devDependencies": {
+    "@pandacss/dev": "^0.23.0",
     "@types/react": "^18.2.45",
     "@vitejs/plugin-react": "^4.2.1",
     "vite": "^5.0.10",

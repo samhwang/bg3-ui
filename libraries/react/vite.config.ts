@@ -24,7 +24,12 @@ export default defineConfig({
       fileName: (format) => (format === 'es' ? 'index.mjs' : 'index.cjs'),
     },
     rollupOptions: {
-      external: [...Object.keys(pkg.dependencies ?? {}), ...Object.keys(pkg.peerDependencies ?? {}), 'react/jsx-runtime'],
+      external: [
+        ...Object.keys(pkg.dependencies ?? {}),
+        ...Object.keys(pkg.peerDependencies ?? {}),
+        'react/jsx-runtime',
+        '@samhwang/bg3-styled-system',
+      ],
       output: [
         {
           format: 'cjs',
