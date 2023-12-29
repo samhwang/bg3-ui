@@ -3,6 +3,8 @@
   "pipeline": {
     "test": {},
     "lint": {},
+    "lint:fix": {},
+    "lint:fix:unsafe": {},
     "format": {},
     "typecheck": {},
     "ci": {
