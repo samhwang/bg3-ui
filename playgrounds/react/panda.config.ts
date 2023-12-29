@@ -30,5 +30,5 @@ export default defineConfig({
 
   // The output directory for your css system
   emitPackage: true,
-  outdir: '../../../node_modules/@samhwang/bg3-styled-system',
+  outdir: '@samhwang/bg3-styled-system',
 });
