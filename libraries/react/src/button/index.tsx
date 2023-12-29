@@ -1,6 +1,6 @@
 import { forwardRef, ComponentProps } from 'react';
-import { css } from '@samhwang/bg3-styled-system/css';
-import { SystemStyleObject } from '@samhwang/bg3-styled-system/types';
+import { css } from 'bg3-styled-system/css';
+import { SystemStyleObject } from 'bg3-styled-system/types';
 import borderSvg from '../baldurs-gate-3-border.svg';
 import borderInvertedSvg from '../baldurs-gate-3-border-inverted.svg';
 
@@ -62,15 +62,8 @@ function ButtonMaskFallback() {
       height="0"
     >
       <title>BG3ButtonMaskFallback</title>
-      <filter id="remove-black" color-interpolation-filters="sRGB">
-        <feColorMatrix
-          type="matrix"
-          values="1 0 0 0 0
-              0 1 0 0 0
-              0 0 1 0 0
-              -1 -1 -1 0 1"
-          result="black-pixels"
-        />
+      <filter id="remove-black" colorInterpolationFilters="sRGB">
+        <feColorMatrix type="matrix" values="1 0 0 0 0 1 0 0 0 0 1 0 0 -1 -1 -1 0 1" result="black-pixels" />
         <feComposite in="SourceGraphic" in2="black-pixels" operator="out" />
       </filter>
     </svg>
