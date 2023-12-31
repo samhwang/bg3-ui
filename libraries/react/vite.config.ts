@@ -28,7 +28,7 @@ export default defineConfig({
         ...Object.keys(pkg.dependencies ?? {}),
         ...Object.keys(pkg.peerDependencies ?? {}),
         'react/jsx-runtime',
-        'bg3-styled-system',
+        '@samhwang/bg3-styled-system',
       ],
       output: [
         {

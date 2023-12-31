@@ -17,7 +17,7 @@ export default defineConfig({
   preflight: true,
 
   // Where to look for your css declarations
-  include: ['../../../libraries/react/node_modules/bg3-styled-system/panda.buildinfo.json', './src/**/*.{js,jsx,ts,tsx}'],
+  include: ['../../../node_modules/@samhwang/bg3-styled-system/dist/panda.buildinfo.json', './src/**/*.{js,jsx,ts,tsx}'],
 
   // Files to exclude
   exclude: [],
@@ -30,5 +30,5 @@ export default defineConfig({
 
   // The output directory for your css system
   emitPackage: true,
-  outdir: '../../../libraries/react/node_modules/bg3-styled-system/bg3-styled-system',
+  outdir: '@samhwang/bg3-styled-system',
 });
