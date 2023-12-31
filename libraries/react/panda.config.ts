@@ -18,4 +18,5 @@ export default defineConfig({
   // The output directory for your css system
   emitPackage: true,
   outdir: '@samhwang/bg3-styled-system',
+  prefix: 'bg3ui'
 });
