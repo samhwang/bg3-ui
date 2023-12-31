@@ -62,7 +62,7 @@ function ButtonMaskFallback() {
       height="0"
     >
       <title>BG3ButtonMaskFallback</title>
-      <filter id="remove-black" color-interpolation-filters="sRGB">
+      <filter id="remove-black" colorInterpolationFilters="sRGB">
         <feColorMatrix
           type="matrix"
           values="1 0 0 0 0
