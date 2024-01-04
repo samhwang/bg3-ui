@@ -1,4 +1,4 @@
-import { forwardRef, ComponentProps } from 'react';
+import { forwardRef, ComponentProps, ElementRef } from 'react';
 import { css } from '@samhwang/bg3-styled-system/css';
 import { SystemStyleObject } from '@samhwang/bg3-styled-system/types';
 import borderSvg from '../baldurs-gate-3-border.svg';
@@ -78,7 +78,7 @@ function ButtonMaskFallback() {
 }
 ButtonMaskFallback.displayName = 'BG3ButtonMaskFallback';
 
-const Button = forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => {
+const Button = forwardRef<ElementRef<'button'>, ButtonProps>((props, ref) => {
   return (
     <button
       type="button"
