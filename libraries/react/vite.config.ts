@@ -19,29 +19,21 @@ export default defineConfig({
     sourcemap: true,
     minify: true,
     lib: {
-      entry: 'src/index.ts',
+      entry: 'src/index.tsx',
       formats: ['es', 'cjs'],
     },
     rollupOptions: {
       external: [...Object.keys(pkg.dependencies ?? {}), ...Object.keys(pkg.peerDependencies ?? {}), 'react/jsx-runtime', '@samhwang/bg3-styled-system'],
       output: [
         {
-          format: 'cjs',
-          preserveModules: true,
-          preserveModulesRoot: 'src',
-          exports: 'named',
-          entryFileNames: '[name].cjs',
-          banner: (x) => (['index.cjs'].includes(x.fileName) ? '' : `'use client';`),
+          format: 'es',
+          banner: "'use client;'"
         },
         {
-          format: 'es',
-          preserveModules: true,
-          preserveModulesRoot: 'src',
-          exports: 'named',
-          entryFileNames: '[name].mjs',
-          banner: (x) => (['index.mjs'].includes(x.fileName) ? '' : `'use client';`),
-        },
-      ],
+          format: 'cjs',
+          banner: "'use client;'"
+        }
+      ]
     },
   },
   test: {

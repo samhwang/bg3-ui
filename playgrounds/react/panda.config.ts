@@ -14,7 +14,8 @@ const globalStyle = defineGlobalStyles({
 
 export default defineConfig({
   preflight: true,
-  include: ['./node_modules/@samhwang/bg3-ui-react/dist/panda.buildinfo.json', './src/**/*.{js,jsx,ts,tsx}'],
+  include: ['../../libraries/styled-system/panda.buildinfo.json', './src/**/*.{js,jsx,ts,tsx}'],
   globalCss: globalStyle,
-  importMap: '@samhwang/bg3-ui-react',
+  outdir: '../../libraries/styled-system',
+  importMap: '@samhwang/bg3-styled-system',
 });

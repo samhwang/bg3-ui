@@ -1,7 +1,7 @@
 import { forwardRef, ComponentProps, ElementRef } from 'react';
-import { css } from '../../styled-system/css';
-import { SystemStyleObject } from '../../styled-system/types';
-import borderSvg from '../baldurs-gate-3-border.svg';
+import { css } from '@samhwang/bg3-styled-system/css';
+import { SystemStyleObject } from '@samhwang/bg3-styled-system/types';
+// import borderSvg from '../baldurs-gate-3-border.svg';
 import borderInvertedSvg from '../baldurs-gate-3-border-inverted.svg';
 
 type ButtonProps = ComponentProps<'button'> & {

@@ -2,8 +2,8 @@
   "name": "@samhwang/bg3-ui-react",
   "version": "1.0.0",
   "description": "BG3 UI React",
-  "main": "dist/index.cjs",
-  "module": "dist/index.mjs",
+  "main": "dist/bg3-ui-react.cjs",
+  "module": "dist/bg3-ui-react.js",
   "types": "dist/index.d.ts",
   "author": "Sam Huynh",
   "repository": {
@@ -28,6 +28,7 @@
   },
   "devDependencies": {
     "@pandacss/dev": "^0.23.0",
+    "@samhwang/bg3-styled-system": "*",
     "@types/react": "^18.2.45",
     "@vitejs/plugin-react": "^4.2.1",
     "vite": "^5.0.10",

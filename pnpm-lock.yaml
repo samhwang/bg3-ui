@@ -54,6 +54,9 @@ importers:
       '@pandacss/dev':
         specifier: ^0.23.0
         version: 0.23.0(typescript@5.3.3)
+      '@samhwang/bg3-styled-system':
+        specifier: '*'
+        version: link:../styled-system
       '@types/react':
         specifier: ^18.2.45
         version: 18.2.45
@@ -67,8 +70,13 @@ importers:
         specifier: ^3.7.0
         version: 3.7.0(@types/node@20.10.5)(typescript@5.3.3)(vite@5.0.10)
 
+  libraries/styled-system: {}
+
   playgrounds/react:
     dependencies:
+      '@samhwang/bg3-styled-system':
+        specifier: '*'
+        version: link:../../libraries/styled-system
       '@samhwang/bg3-ui-react':
         specifier: '*'
         version: link:../../libraries/react
