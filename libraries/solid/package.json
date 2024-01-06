@@ -1,15 +1,15 @@
 {
-  "name": "@samhwang/bg3-ui-react",
+  "name": "@samhwang/bg3-ui-solid",
   "version": "1.0.0",
-  "description": "BG3 UI React",
-  "main": "dist/bg3-ui-react.cjs",
-  "module": "dist/bg3-ui-react.js",
+  "description": "BG3 UI Solid",
+  "main": "dist/bg3-ui-solid.cjs",
+  "module": "dist/bg3-ui-solid.js",
   "types": "dist/index.d.ts",
   "author": "Sam Huynh",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/samhwang/bg3-ui.git",
-    "directory": "libraries/bg3-ui-react"
+    "directory": "libraries/bg3-ui-solid"
   },
   "type": "module",
   "scripts": {
@@ -31,13 +31,12 @@
   },
   "peerDependencies": {
     "@pandacss/dev": "^0.25.0",
-    "react": "^18.2.0"
+    "solid-js": "^1.8.7"
   },
   "devDependencies": {
     "@samhwang/bg3-styled-system": "*",
-    "@types/react": "^18.2.45",
-    "@vitejs/plugin-react": "^4.2.1",
-    "vite-plugin-dts": "^3.7.0"
+    "vite-plugin-dts": "^3.7.0",
+    "vite-plugin-solid": "^2.8.0"
   },
   "dependencies": {
     "@fontsource/ibm-plex-mono": "^5.0.8"

@@ -1,4 +1,4 @@
-import { forwardRef, ComponentProps, ElementRef } from 'react';
+import { JSX } from 'solid-js';
 import { css } from '@samhwang/bg3-styled-system/css';
 import { SystemStyleObject } from '@samhwang/bg3-styled-system/types';
 // import borderSvg from '../baldurs-gate-3-border.svg';
@@ -7,7 +7,7 @@ import borderInvertedSvg from '../baldurs-gate-3-border-inverted.svg';
 function ButtonBackground() {
   return (
     <span
-      className={css({
+      class={css({
         position: 'absolute',
         zIndex: -1,
         inset: 0,
@@ -27,7 +27,7 @@ ButtonBackground.displayName = 'BG3ButtonBackground';
 function ButtonBorder() {
   return (
     <span
-      className={css({
+      class={css({
         position: 'absolute',
         zIndex: -2,
         inset: '-4px -12px',
@@ -51,14 +51,14 @@ ButtonBorder.displayName = 'BG3ButtonBorder';
 function ButtonMaskFallback() {
   return (
     <svg
-      className={css({
+      class={css({
         position: 'absolute',
       })}
       width="0"
       height="0"
     >
       <title>BG3ButtonMaskFallback</title>
-      <filter id="remove-black" colorInterpolationFilters="sRGB">
+      <filter id="remove-black" color-interpolation-filters="sRGB">
         <feColorMatrix
           type="matrix"
           values="1 0 0 0 0
@@ -74,15 +74,14 @@ function ButtonMaskFallback() {
 }
 ButtonMaskFallback.displayName = 'BG3ButtonMaskFallback';
 
-type ButtonProps = ComponentProps<'button'> & {
+type ButtonProps = JSX.IntrinsicElements['button'] & {
   css?: false | null | SystemStyleObject;
 };
-const Button = forwardRef<ElementRef<'button'>, ButtonProps>((props, ref) => {
+const Button = (props: ButtonProps) => {
   return (
     <button
       type="button"
-      ref={ref}
-      className={css(
+      class={css(
         {
           position: 'relative',
           borderWidth: '4px 12px',
@@ -115,8 +114,7 @@ const Button = forwardRef<ElementRef<'button'>, ButtonProps>((props, ref) => {
       <ButtonMaskFallback />
     </button>
   );
-});
-
+};
 Button.displayName = 'BG3Button';
 
 export default Button;
