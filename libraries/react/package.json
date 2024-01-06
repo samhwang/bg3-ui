@@ -30,7 +30,7 @@
     "release": "pnpm run build && changeset publish"
   },
   "peerDependencies": {
-    "@pandacss/dev": "^0.24.0",
+    "@pandacss/dev": "^0.25.0",
     "react": "^18.2.0"
   },
   "devDependencies": {
